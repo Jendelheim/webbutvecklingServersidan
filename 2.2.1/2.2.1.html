@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uppgift 2.2.1</title>
+</head>
+<body>
+<br>
+<h1>POST</h1>
+<br>
+
+
+
+
+<form method="post" action="2.2.1.php">
+
+    <div>
+        <input type="hidden" name="hidden" value="hidden">
+    </div>
+
+    <p>
+        <input type="text_box" name="name" value="your name">
+    </p>
+
+    <p>
+        Male <input type="radio" name="Gender" value="Man" checked="checked"> Female <input type="radio" name="Gender" value="Man">
+    </p>
+
+    <p>
+        <textarea name="prefs" rows="7" cols="15">My interests are.. </textarea>
+    </p>
+
+        // Denna följer inte med i $_POST's echo iteration.
+    <p>
+        Intresserad av nyhetsmail: <input name="interested " checked="checked" type="checkbox" value="Interested">
+    </p>
+
+    <p>
+        <select name="Universitet: " size="1">
+            <option value="Instutitionen för data- och systemvetenskap">
+                DSV
+            </option>
+            <option value="Kungliga tekniska högskolan">
+                KTH
+            </option>
+        </select>
+    </p>
+
+    <p>
+        <input type="submit" value="Submit" name="submit_post_button">
+    </p>
+</form>
+
+<br>
+<h1>GET</h1>
+<br>
+
+<form method="get" action="2.2.1.php" id="getforumet">
+
+
+
+
+
+
+    <p>
+        <input type="submit" value="Submit" name="submit_get_button">
+    </p>
+</form>
+
+</body>
+</html>
