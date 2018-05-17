@@ -1,4 +1,4 @@
-<?php
+    <?php
 if(isset($_GET['gender']) and empty($_GET['city'])){
     $gender = htmlspecialchars($_GET['gender']);
     $html = file_get_contents($_SERVER['DOCUMENT_ROOT'] . "/4.1.1/4.1.1.2.html");
