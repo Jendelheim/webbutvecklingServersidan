@@ -31,20 +31,26 @@ else {
         'To' => $to,
         'Subject' => $subject
     );
+
+
     $mail->SMPTDebug = 2;
     $mail->IsSMTP();
     $mail->Mailer = "smtp";
     $mail->Host = 'smtp.gmail.com';
+
+
     $mail->Port = 465;                                      //Kan även använda porten 587
     $mail->SMTPAuth = true;
     $mail->Username = 'Victor.Jendelheim@gmail.com';                  //Byta ut till eget id
-    $mail->Password = '';                   //Byta ut till eget lösenord
+    $mail->Password = 'tgcmxzqw9';                   //Byta ut till eget lösenord
     $mail->SMTPSecure = 'ssl';
     $mail->setFrom($from);
     $mail->addAddress($to);
     $mail->isHTML(true);
     $mail->Subject = $subject;
     $mail->Body = $message;
+
+
     if (!$mail->send()) {
         echo "Mailer Error: " . $mail->ErrorInfo;
     } else {
