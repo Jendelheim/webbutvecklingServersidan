@@ -22,7 +22,7 @@ $frames = array(
 );
 
 // Create an array containing the duration (in millisecond) of each frames (in order too)
-$durations = array(40, 80, 40, 20);
+$durations = array(40, 80, 40);
 
 // Initialize and create the GIF !
 $gc = new GifCreator();
@@ -32,5 +32,4 @@ $gc->create($frames, $durations, 5);
 $gifBinary = $gc->getGif();
 
 header('Content-type: image/gif');
-header('Content-Disposition: filename="butterfly.gif"');
 echo $gifBinary;
