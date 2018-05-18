@@ -6,4 +6,4 @@
  * Time: 16:35
  */
 
-echo 'Innehåller följande kakor(Cookies): ' .$_COOKIE['name'].'<br>' . $_COOKIE['time'];
+echo 'The cookie contains: (Cookies): ' .$_COOKIE['name'].'<br>' . $_COOKIE['time'];
