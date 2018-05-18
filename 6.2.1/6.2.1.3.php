@@ -16,13 +16,14 @@ function databaseConnection(){
 }
 $conn = databaseConnection();
 
-echo 'creating table.. ';
 
+ // Testade fram och tillbaka med SQL-injections för att skapa / droppa tables.
+/*echo 'creating table.. ';
 $conn->query("CREATE TABLE db_17730744.guestList (id int,  time TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP, name varchar(255), email varchar(255), webpage varchar(255), comment varchar(255))");
 //$conn->query("DROP TABLE guestList");
 echo 'hello, now table is created.';
 
-
+*/
 
 
 

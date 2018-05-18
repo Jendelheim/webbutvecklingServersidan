@@ -10,8 +10,9 @@ header('Content-type: text/plain');
 
 define('MB', 1048576);
 
-print_r($_FILES);
+//rint_r($_FILES);
 if (($_FILES['file']['size'] > 5*MB) or empty($_FILES)){
+    echo 'Something went kinda wrong.. either the file is too big or no image is selected!';
     die;
 }
 
@@ -23,7 +24,7 @@ switch($ext){
 
     case('image/jpeg'):
 
-        header("Content-type: image/jpeg");
+        header("Content-type: ".$ext);
         readfile($filename);
         break;
 
@@ -40,5 +41,3 @@ switch($ext){
 
         break;
 }
-
-?>
